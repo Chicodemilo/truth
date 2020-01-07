@@ -82,6 +82,15 @@ const styles = StyleSheet.create({
     color: 'white',
     letterSpacing: 1.2,
   },
+  gridItem: {
+    flex: 1,
+    padding: 5,
+    margin: 10,
+    backgroundColor: '#fcfcfc',
+    borderColor: '#ededed',
+    borderWidth: 1,
+    height: 150,
+  },
 });
 
 export default styles;
