@@ -25,7 +25,7 @@ const TruthNavigator = createStackNavigator(
   },
 );
 
-//can do as an object:
+//can do as an object on each navigation screen:
 // const TruthNavigator = createStackNavigator({Truths: {
 //     screen: CategoryDataScreen,
 //     navigationOptions: {

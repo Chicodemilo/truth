@@ -8,7 +8,9 @@ import {Card, Button, Icon} from 'react-native-elements';
 // import EnterDataBox from './src/components/EnterData/EnterDataBox';
 // import NavModal from './src/components/Navigation/NavModal';
 import TruthNavigator from './src/components/Navigation/TruthsNavigator';
+import {enableScreens} from 'react-native-screens';
 
+enableScreens();
 export default class App extends Component {
   state = {
     showNav: false,
