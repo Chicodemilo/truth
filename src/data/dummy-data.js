@@ -1,7 +1,7 @@
 import Truth from '../models/truth';
 
 export const TRUTHS = [
-  new Truth('c1', 'Truth One', '#f5428d'),
+  new Truth('c1', 'Truth One-Hundred and Forty-Five', '#f5428d'),
   new Truth('c2', 'Truth Two', '#f54242'),
   new Truth('c3', 'Truth Three', '#f5a442'),
   new Truth('c4', 'Truth Four', '#f5d142'),

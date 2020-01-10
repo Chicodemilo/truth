@@ -25,7 +25,7 @@ const CategoryDataScreen = props => {
 };
 
 CategoryDataScreen.navigationOptions = {
-  headerTitle: 'All The Truths Be',
+  headerTitle: 'All Truths',
 };
 
 export default CategoryDataScreen;

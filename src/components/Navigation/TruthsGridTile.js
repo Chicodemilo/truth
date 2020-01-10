@@ -5,9 +5,21 @@ import COLORS from '../../constants/Colors';
 
 const TruthsGridTile = props => {
   return (
-    <TouchableOpacity style={styles.gridItem} onPress={props.onSelect}>
-      <View style={{backgroundColor: props.color, padding: 2}}>
-        <Text style={{color: 'white'}}>{props.headline}</Text>
+    <TouchableOpacity
+      style={{
+        ...styles.gridItem,
+        ...{backgroundColor: props.color},
+      }}
+      onPress={props.onSelect}>
+      <View>
+        <Text
+          numberOfLines={1}
+          style={{
+            ...styles.ubuntuLight,
+            ...{color: 'white', fontSize: 22},
+          }}>
+          {props.headline}
+        </Text>
       </View>
     </TouchableOpacity>
   );

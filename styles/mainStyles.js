@@ -84,12 +84,19 @@ const styles = StyleSheet.create({
   },
   gridItem: {
     flex: 1,
-    padding: 5,
     margin: 10,
-    backgroundColor: '#fcfcfc',
+    padding: 5,
     borderColor: '#ededed',
     borderWidth: 1,
     height: 150,
+    borderRadius: 10,
+    shadowColor: 'black',
+    shadowOpacity: 0.26,
+    shadowOffset: {width: 0, height: 2},
+    shadowRadius: 10,
+    elevation: 3,
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
   },
 });
 
