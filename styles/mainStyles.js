@@ -98,6 +98,42 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
   },
+  truthCard: {
+    margin: 10,
+    height: '93%',
+    padding: 0,
+    borderColor: '#ededed',
+    borderWidth: 2,
+    backgroundColor: 'white',
+    shadowColor: 'black',
+    shadowOpacity: 0.25,
+    shadowOffset: {width: 5, height: 5},
+    shadowRadius: 5,
+    elevation: 3,
+  },
+  truthCardScroll: {
+    padding: 15,
+    height: 50,
+    borderTopColor: '#ededed',
+    borderTopWidth: 1,
+    borderBottomColor: '#ededed',
+    borderBottomWidth: 1,
+  },
+  truthCardImage: {
+    width: '100%',
+    height: 150,
+  },
+  truthCardHeadline: {
+    height: 35,
+    backgroundColor: '#383838',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  truthCardHeadlineText: {
+    color: 'white',
+    fontSize: 17,
+    fontFamily: 'ubuntu-light',
+  },
 });
 
 export default styles;
