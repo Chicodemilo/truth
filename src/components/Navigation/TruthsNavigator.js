@@ -1,8 +1,14 @@
+import React from 'react';
+import {Text} from 'react-native';
+
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import CategoryDataScreen from '../../screens/CategoryDataScreen';
 import TruthDetailsScreen from '../../screens/TruthDetailsScreen';
 import Colors from '../../constants/Colors';
+// import {HeaderButtons, Item} from 'react-navigation-header-buttons';
+
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const TruthNavigator = createStackNavigator(
   {
@@ -21,6 +27,18 @@ const TruthNavigator = createStackNavigator(
         backgroundColor: 'white',
       },
       headerTintColor: Colors.primaryRed,
+      headerRight: () => (
+        <Icon
+          name="bars"
+          style={{color: Colors.primaryBlue, fontSize: 23, paddingRight: 15}}
+          onPress={() => {
+            console.log('MENU PRESSED');
+          }}
+        />
+        // <HeaderButtons>
+        //   <Item title="HAMS" iconName="menu" />
+        // </HeaderButtons>
+      ),
     },
   },
 );

@@ -3,7 +3,6 @@ import React from 'react';
 import {
   View,
   Text,
-  Button,
   TextInput,
   KeyboardAvoidingView,
   ScrollView,
@@ -11,9 +10,8 @@ import {
 } from 'react-native';
 import styles from '../../styles/mainStyles';
 import {TRUTHS} from '../data/dummy-data';
-
-import {Image, Icon} from 'react-native-elements';
-import Colors from '../constants/Colors';
+import {Image, Button} from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const TruthDetailsScreen = props => {
   const saveAndGoBack = () => {
@@ -124,14 +122,13 @@ const TruthDetailsScreen = props => {
           />
         </ScrollView>
         <Button
-          icon={<Icon name="code" color="#ffffff" />}
+          icon={<Icon name="check" color="white" size={24} />}
           buttonStyle={{
             borderRadius: 0,
             marginLeft: 0,
             marginRight: 0,
             marginBottom: 0,
           }}
-          title="SAVE"
           onPress={() => {
             saveAndGoBack();
           }}
@@ -156,22 +153,9 @@ const TruthDetailsScreen = props => {
   );
 };
 
-TruthDetailsScreen.navigationOptions = navData => {
-  const truthId = navData.navigation.getParam('truthId');
-  const selectedTruth = TRUTHS.find(truth => truth.id === truthId);
-  return {
-    headerTitle: selectedTruth.headline,
-    // THESE ARE NOW SET IN THE NAVIGATOR TruthsNavigaor.js
-    // headerTitleStyle: {
-    //   fontFamily: 'Ubuntu-Light',
-    //   fontSize: 14,
-    //   letterSpacing: 1.2,
-    // },
-    // headerStyle: {
-    //   backgroundColor: 'white',
-    // },
-    // headerTintColor: Colors.primaryRed,
-  };
-};
+// TruthDetailsScreen.navigationOptions = navData => {
+//   const truthId = navData.navigation.getParam('truthId');
+//   const selectedTruth = TRUTHS.find(truth => truth.id === truthId);
+// };
 
 export default TruthDetailsScreen;
