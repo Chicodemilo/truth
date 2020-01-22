@@ -8,6 +8,7 @@ import {Card, Button, Icon} from 'react-native-elements';
 // import EnterDataBox from './src/components/EnterData/EnterDataBox';
 // import NavModal from './src/components/Navigation/NavModal';
 import TruthNavigator from './src/components/Navigation/TruthsNavigator';
+import HeaderBox from './src/components/header/HeaderBox';
 import {enableScreens} from 'react-native-screens';
 
 enableScreens();
@@ -57,13 +58,3 @@ export default class App extends Component {
     );
   }
 }
-
-const localStyles = StyleSheet.create({
-  localBox: {
-    flex: 1,
-    backgroundColor: 'green',
-  },
-  localText: {
-    color: 'white',
-  },
-});

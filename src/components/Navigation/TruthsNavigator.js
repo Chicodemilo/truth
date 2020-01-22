@@ -8,6 +8,7 @@ import CategoryDataScreen from '../../screens/CategoryDataScreen';
 import TruthDetailsScreen from '../../screens/TruthDetailsScreen';
 import SearchScreen from '../../screens/SearchScreen';
 import AccountScreen from '../../screens/AccountScreen';
+import HeaderBox from '../header/HeaderBox';
 import Colors from '../../constants/Colors';
 // import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -16,7 +17,7 @@ const defaultStackNavOptions = navData => {
   return {
     headerTitleStyle: {
       fontFamily: 'Ubuntu-Light',
-      fontSize: 14,
+      fontSize: 16,
       letterSpacing: 1.3,
     },
     headerStyle: {
@@ -25,16 +26,12 @@ const defaultStackNavOptions = navData => {
     headerTintColor: Colors.primaryRed,
     headerRight: () => (
       <Icon
-        name="amazon"
+        name="rocket"
         style={{color: Colors.primaryRed, fontSize: 23, paddingRight: 15}}
         onPress={() => {
-          //   navData.navigation.toggleDrawer();
-          console.log('drawer menu');
+          navData.navigation.toggleDrawer();
         }}
       />
-      // <HeaderButtons>
-      //   <Item title="HAMS" iconName="menu" />
-      // </HeaderButtons>
     ),
   };
 };
@@ -59,6 +56,10 @@ const SearchNavigator = createStackNavigator(
     defaultNavigationOptions: defaultStackNavOptions,
   },
 );
+
+SearchNavigator.navigationOptions = {
+  headerTitle: 'totalTRUTH',
+};
 
 const AccountNavigator = createStackNavigator(
   {
@@ -90,6 +91,7 @@ AccountNavigator.navigationOptions = {
 //     }
 // });
 
+// Currently not using the Tab Nav
 const TruthTabNavigator = createBottomTabNavigator(
   {
     MyTruths: {
@@ -117,10 +119,31 @@ const TruthTabNavigator = createBottomTabNavigator(
   },
 );
 
-const MainNavigator = createDrawerNavigator({
-  MyTruths: TruthTabNavigator,
-  Search: SearchNavigator,
-  MyAccount: AccountNavigator,
-});
+const MainNavigator = createDrawerNavigator(
+  {
+    Search: SearchNavigator,
+    MyTruths: {
+      screen: TruthNavigator,
+      navigationOptions: {
+        drawerLabel: 'My Truths',
+      },
+    },
+    MyAccount: {
+      screen: AccountNavigator,
+      navigationOptions: {
+        drawerLabel: 'Account',
+      },
+    },
+  },
+  {
+    contentOptions: {
+      activeTintColor: Colors.accentColor,
+      labelStyle: {
+        fontFamily: 'Ubuntu-light',
+        fontSize: 15,
+      },
+    },
+  },
+);
 
 export default createAppContainer(MainNavigator);

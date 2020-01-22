@@ -25,22 +25,20 @@ const CategoryDataScreen = props => {
   };
   return <FlatList data={TRUTHS} renderItem={renderGridItem} numColumns={2} />;
 };
-CategoryDataScreen.navigationOptions = navData => {
-  return {
-    headerRight: () => (
-      <Icon
-        name="bars"
-        style={{color: Colors.primaryBlue, fontSize: 23, paddingRight: 15}}
-        onPress={() => {
-          navData.navigation.toggleDrawer;
-        }}
-      />
-      // <HeaderButtons>
-      //   <Item title="HAMS" iconName="menu" />
-      // </HeaderButtons>
-    ),
-  };
-};
+// CategoryDataScreen.navigationOptions = () => {
+//   return {
+//     headerRight: () => (
+//       <Icon
+//         name="bars"
+//         style={{color: Colors.primaryRed, fontSize: 23, paddingRight: 15}}
+//         onPress={() => {
+//           console.log('TOGGLE');
+//           //   navData.navigation.toggleDrawer;
+//         }}
+//       />
+//     ),
+//   };
+// };
 // CategoryDataScreen.navigationOptions = {
 //   headerTitle: 'All Truths',
 // };
