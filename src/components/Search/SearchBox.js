@@ -10,7 +10,8 @@ export default class SearchBox extends Component {
 
   updateSearch = search => {
     this.setState({search});
-    console.log(this.state.search);
+    this.props.searchOnChange(search);
+    // console.log(this.state.search);
   };
 
   render() {

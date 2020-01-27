@@ -34,7 +34,7 @@ export const TRUTHS = [
   new Truth(
     'c3',
     'Truth Three',
-    'these are search terms',
+    'A these are search terms 3',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=10',
     'Best Month Of The Year',
@@ -49,7 +49,7 @@ export const TRUTHS = [
   new Truth(
     'c4',
     'Truth Four',
-    'these are search terms',
+    'b these are search terms 4',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=2',
     'Best Month Of The Year',
@@ -64,7 +64,7 @@ export const TRUTHS = [
   new Truth(
     'c5',
     'Truth Five',
-    'these are search terms',
+    'c these are search terms 5',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=3',
     'Best Month Of The Year',
@@ -79,7 +79,7 @@ export const TRUTHS = [
   new Truth(
     'c6',
     'Truth Six',
-    'these are search terms',
+    'd these are search terms 6',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=4',
     'Best Month Of The Year',
@@ -94,7 +94,7 @@ export const TRUTHS = [
   new Truth(
     'c7',
     'Truth Seven',
-    'these are search terms',
+    'what these are search terms 7',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=5',
     'Best Month Of The Year',
@@ -109,7 +109,7 @@ export const TRUTHS = [
   new Truth(
     'c8',
     'Truth Eight',
-    'these are search terms',
+    'who these are search terms 8',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=6',
     'Best Month Of The Year',
@@ -124,7 +124,7 @@ export const TRUTHS = [
   new Truth(
     'c9',
     'Truth Nine',
-    'these are search terms',
+    'Whooo these are search terms 9',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=7',
     'Best Month Of The Year',
@@ -139,7 +139,7 @@ export const TRUTHS = [
   new Truth(
     'c10',
     'Truth Ten',
-    'these are search terms',
+    'which these are search terms 10',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     'https://picsum.photos/400/300?random=8',
     'Best Month Of The Year',
