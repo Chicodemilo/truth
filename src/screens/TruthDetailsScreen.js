@@ -9,18 +9,19 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import styles from '../../styles/mainStyles';
-import {TRUTHS} from '../data/dummy-data';
 import {Image, Button} from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {useSelector} from 'react-redux';
 
 const TruthDetailsScreen = props => {
+  const storeTruths = useSelector(state => state.truths.fillerTruths);
   const saveAndGoBack = () => {
     console.log('Do save stuff');
     props.navigation.goBack();
   };
 
   const truthId = props.navigation.getParam('truthId');
-  const selectedTruth = TRUTHS.find(truth => truth.id === truthId);
+  const selectedTruth = storeTruths.find(truth => truth.id === truthId);
 
   //   this data can also be passed via a prop vvvvvv
   //   const truthColor = props.navigation.getParam('color');

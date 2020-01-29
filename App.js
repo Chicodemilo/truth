@@ -10,9 +10,19 @@ import {Card, Button, Icon} from 'react-native-elements';
 import TruthNavigator from './src/components/Navigation/TruthsNavigator';
 import HeaderBox from './src/components/header/HeaderBox';
 import {enableScreens} from 'react-native-screens';
+import {createStore, combineReducers} from 'redux';
+import {Provider} from 'react-redux';
+
+import truthsReducer from './src/store/reducers/truths';
 
 enableScreens();
 export default class App extends Component {
+  rootReducer = combineReducers({
+    truths: truthsReducer,
+  });
+
+  store = createStore(this.rootReducer);
+
   state = {
     showNav: false,
   };
@@ -30,7 +40,9 @@ export default class App extends Component {
   };
   render() {
     return (
-      <TruthNavigator />
+      <Provider store={this.store}>
+        <TruthNavigator />
+      </Provider>
       //   <View style={styles.mainView}>
       //     <NavModal visible={this.state.showNav} hideNavBox={this.hideNav} />
       //     <HeaderBox showNavBox={this.showNav} />

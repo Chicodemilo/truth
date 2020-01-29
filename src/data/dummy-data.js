@@ -1,5 +1,23 @@
 import Truth from '../models/truth';
 
+export const USER_TRUTHS = [
+  new Truth(
+    'u1',
+    'This Is USER TRUTH ONE',
+    'what is users truth one',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+    'https://picsum.photos/400/300?random=1',
+    'This is My Truth',
+    'Tacos',
+    100,
+    'Burritos',
+    11,
+    'Topo Chico',
+    50,
+    '#f5428d',
+  ),
+];
+
 export const TRUTHS = [
   new Truth(
     'c1',

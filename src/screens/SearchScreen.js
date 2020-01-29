@@ -3,12 +3,25 @@ import {View, Text, Switch} from 'react-native';
 import styles from '../../styles/mainStyles';
 import SearchBox from '../components/Search/SearchBox';
 import {TRUTHS} from '../data/dummy-data';
+import {useSelector} from 'react-redux';
 
 class SearchScreen extends Component {
   state = {
-    truths: TRUTHS,
+    storedTruths: {},
     searchString: '',
     testValue: false,
+  };
+
+  componentDidMount() {
+    this.setState({
+      storedTruths: this.storeTruths(),
+    });
+    console.log(this.state.storedTruths);
+  }
+
+  storeTruths = () => {
+    // return useSelector(state => state.truths.fillerTruths);
+    return {name: 'Mama'};
   };
 
   handleSearchInput = text => {

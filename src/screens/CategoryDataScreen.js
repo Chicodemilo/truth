@@ -1,12 +1,14 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, FlatList} from 'react-native';
 import styles from '../../styles/mainStyles';
-import {TRUTHS} from '../data/dummy-data';
+// import {TRUTHS} from '../data/dummy-data';
 import TruthsGridTile from '../components/Navigation/TruthsGridTile';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Colors from '../constants/Colors';
+import {useSelector} from 'react-redux';
 
 const CategoryDataScreen = props => {
+  const storeTruths = useSelector(state => state.truths.fillerTruths);
+  const userName = useSelector(state => state.truths.userName);
+
   const renderGridItem = itemData => {
     return (
       <TruthsGridTile
@@ -23,7 +25,12 @@ const CategoryDataScreen = props => {
       />
     );
   };
-  return <FlatList data={TRUTHS} renderItem={renderGridItem} numColumns={2} />;
+  return (
+    <View>
+      <Text style={styles.test}>{userName}</Text>
+      <FlatList data={storeTruths} renderItem={renderGridItem} numColumns={2} />
+    </View>
+  );
 };
 // CategoryDataScreen.navigationOptions = () => {
 //   return {
