@@ -4,7 +4,7 @@ const initialState = {
   fillerTruths: TRUTHS,
   userTruths: USER_TRUTHS,
   activeTruth: [],
-  userName: 'Bob',
+  userName: 'Bobo',
 };
 
 const truthReducer = (state = initialState, action) => {
