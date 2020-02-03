@@ -27,7 +27,7 @@ const defaultStackNavOptions = navData => {
     headerRight: () => (
       <Icon
         name="rocket"
-        style={{color: Colors.primaryRed, fontSize: 23, paddingRight: 15}}
+        style={{color: Colors.primaryBlue, fontSize: 23, paddingRight: 15}}
         onPress={() => {
           navData.navigation.toggleDrawer();
         }}

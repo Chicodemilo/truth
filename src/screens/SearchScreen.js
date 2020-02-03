@@ -3,6 +3,7 @@ import {View, Text, Switch} from 'react-native';
 import styles from '../../styles/mainStyles';
 import SearchBox from '../components/Search/SearchBox';
 import {connect} from 'react-redux';
+import {changeName, selectTruth} from '../store/actions/truths';
 
 class SearchScreen extends Component {
   state = {
@@ -20,6 +21,7 @@ class SearchScreen extends Component {
     this.setState({
       testValue: value,
     });
+    this.props.onNameChange();
   };
 
   saveFilters = () => {
@@ -76,9 +78,9 @@ const mapStateToProps = state => {
 // Use this later
 const mapDispatchToProps = dispatch => {
   return {
-    onNameChange: () => dispatch(),
+    onNameChange: () => dispatch(changeName()),
   };
 };
 
 // The second arg on conn would be mapping dispatch to props
-export default connect(mapStateToProps)(SearchScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchScreen);

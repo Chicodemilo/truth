@@ -8,20 +8,15 @@ import {Card, Button, Icon} from 'react-native-elements';
 // import EnterDataBox from './src/components/EnterData/EnterDataBox';
 // import NavModal from './src/components/Navigation/NavModal';
 import TruthNavigator from './src/components/Navigation/TruthsNavigator';
-import HeaderBox from './src/components/header/HeaderBox';
+// import HeaderBox from './src/components/header/HeaderBox';
 import {enableScreens} from 'react-native-screens';
-import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 
-import truthsReducer from './src/store/reducers/truths';
+import configureStore from './src/store/configureStore';
 
 enableScreens();
 export default class App extends Component {
-  rootReducer = combineReducers({
-    truths: truthsReducer,
-  });
-
-  store = createStore(this.rootReducer);
+  store = configureStore();
 
   state = {
     showNav: false,
@@ -43,30 +38,6 @@ export default class App extends Component {
       <Provider store={this.store}>
         <TruthNavigator />
       </Provider>
-      //   <View style={styles.mainView}>
-      //     <NavModal visible={this.state.showNav} hideNavBox={this.hideNav} />
-      //     <HeaderBox showNavBox={this.showNav} />
-      //     <SearchBox />
-      //     <EnterDataBox />
-      //     <Card
-      //       title="HELLO WORLD"
-      //       image={require('./src/assets/images/pic2.jpg')}>
-      //       <Text style={{marginBottom: 10}}>
-      //         The idea with React Native Elements is more about component
-      //         structure than actual design.
-      //       </Text>
-      //       <Button
-      //         icon={<Icon name="code" color="#ffffff" />}
-      //         buttonStyle={{
-      //           borderRadius: 0,
-      //           marginLeft: 0,
-      //           marginRight: 0,
-      //           marginBottom: 0,
-      //         }}
-      //         title="VIEW NOW"
-      //       />
-      //     </Card>
-      //   </View>
     );
   }
 }

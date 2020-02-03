@@ -14,6 +14,7 @@ const CategoryDataScreen = props => {
       <TruthsGridTile
         headline={itemData.item.headline}
         color={itemData.item.color}
+        id={itemData.item.id}
         onSelect={() => {
           props.navigation.navigate({
             routeName: 'TruthDetails',
